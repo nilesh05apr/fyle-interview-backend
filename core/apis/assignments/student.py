@@ -46,3 +46,4 @@ def submit_assignment(p, incoming_payload):
     db.session.commit()
     submitted_assignment_dump = AssignmentSchema().dump(submitted_assignment)
     return APIResponse.respond(data=submitted_assignment_dump)
+
